@@ -1,0 +1,66 @@
+// Змінні
+$font-family: Arial, sans-serif;
+$background-color: #f2f2f2;
+$header-bg-color: #007BFF;
+$header-text-color: #fff;
+$nav-bg-color: #333;
+$nav-text-color: #ff0;
+$container-bg-color: #fff;
+$container-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+$link-color: #fff;
+$current-link-color: #0ff;
+
+// Стилі
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+}
+
+header {
+    background-color: $header-bg-color;
+    color: $header-text-color;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: $nav-bg-color;
+    color: $nav-text-color;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: $link-color;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: $container-bg-color;
+    border-radius: 5px;
+    box-shadow: $container-shadow;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Псевдоклас для підсвічування поточного посилання
+nav a.current {
+    color: $current-link-color;
+}

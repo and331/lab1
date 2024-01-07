@@ -1,0 +1,19 @@
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer');
+
+// Компіляція Sass у CSS
+function compileSass() {
+  return gulp.src('src/styles.scss') // шлях до вхідного файлу Sass
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('dist')); // шлях до вихідної папки CSS
+}
+
+ //Спостереження за змінами у файлах Sass
+function watch() {
+  gulp.watch('src/*.scss', compileSass);
+}
+
+// Задача для компіляції Sass (запускається командою gulp в терміналі)
+gulp.task('default', gulp.series(compileSass, watch));
