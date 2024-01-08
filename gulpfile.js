@@ -8,7 +8,7 @@ const zip = import('gulp-zip');
 
 // Debug: Компіляція Sass у форматований CSS з картами прив'язок
 gulp.task('debug', function () {
-  return gulp.src('src/styles.scss')
+  return gulp.src('src/**/*.scss') // Змінили шлях на усі файли scss у папці src
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
@@ -18,7 +18,7 @@ gulp.task('debug', function () {
 
 // Production: Компіляція та мініфікація Sass у CSS з суфіксом .min
 gulp.task('production', function () {
-  return gulp.src('src/styles.scss')
+  return gulp.src('src/**/*.scss') // Змінили шлях на усі файли scss у папці src
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(cleanCSS())

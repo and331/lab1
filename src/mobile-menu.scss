@@ -1,0 +1,25 @@
+/* Змінні */
+$mobileMenuBgColor: #333;
+$mobileMenuTextColor: #fff;
+$mobileMenuPadding: 10px;
+
+/* Стилі для мобільного меню */
+.mobile-menu {
+    #mobile-menu-toggle {
+        display: block;
+        background-color: $mobileMenuBgColor;
+        color: $mobileMenuTextColor;
+        padding: $mobileMenuPadding;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    &.menu-open {
+        .mobile-nav {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* Змінні */
+/* Стилі для мобільного меню */
+.mobile-menu #mobile-menu-toggle {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.mobile-menu .mobile-nav {
+  display: none;
+}
+.mobile-menu.menu-open .mobile-nav {
+  display: block;
+}
+/*# sourceMappingURL=maps/mobile-menu.css.map */

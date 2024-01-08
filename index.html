@@ -5,23 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Головна сторінка</title>
     <link rel="stylesheet" type="text/css" href="dist/styles.css">
-	<link rel="stylesheet" type="text/css" href="dist/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/mobile-menu.css"> <!-- Додайте стилі для мобільного меню -->
 </head>
 <body>
     <header>
         <h1>Мій персональний веб-сайт</h1>
         <p>Ласкаво просимо!</p>
     </header>
-    <nav>
+    <nav class="desktop-menu">
         <a href="#" class="current">Головна</a>
         <a href="about.html">Про мене</a>
         <a href="contacts.html">Контакти</a>
     </nav>
-	<div class="container">
+    <div class="mobile-menu">
+        <button id="mobile-menu-toggle">Меню</button>
+        <nav class="mobile-nav">
+            <a href="#" class="current">Головна</a>
+            <a href="about.html">Про мене</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </div>
+    <div class="container">
         <h1>Про сайт</h1>
         <p>Це моя головна сторінка, де я розповім вам про себе.</p>
         <img src="images/i.jpg" alt="Моя фотографія">
-		<img src="images/i2.png" alt="Моя фотографія">
+        <img src="images/i2.png" alt="Моя фотографія">
     </div>
+
+    <script src="mobile-menu.js"></script> <!-- Додайте посилання на ваш JavaScript файл -->
 </body>
 </html>

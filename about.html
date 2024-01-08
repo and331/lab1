@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Про мене</title>
     <link rel="stylesheet" type="text/css" href="dist/styles.css">
-	<link rel="stylesheet" type="text/css" href="dist/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/mobile-menu.css"> <!-- Додайте стилі для мобільного меню -->
 </head>
 <body>
     <header>
         <h1>Мій персональний веб-сайт</h1>
         <p>Ласкаво просимо!</p>
     </header>
-    <nav>
+    <nav class="desktop-menu">
         <a href="index.html">Головна</a>
         <a href="#" class="current">Про мене</a>
         <a href="contacts.html">Контакти</a>
     </nav>
-	<div class="container">
+    <div class="mobile-menu">
+        <button id="mobile-menu-toggle">Меню</button>
+        <nav class="mobile-nav">
+            <a href="index.html">Головна</a>
+            <a href="#" class="current">Про мене</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </div>
+    <div class="container">
         <h1>Про мене</h1>
         <p>Привіт, я - Андрій. Я програміст із захопленням у різних областях, таких як електроніка, схемотехніка, радіо, розробка пристроїв на мікроконтролерах та 3D друк на FDM принтері. Моя мета - поєднати своє хобі з роботою та розробляти цікаві проекти.</p>
-		<img src="images/Graber_i3.jpg" alt="3д принтер">
-		<img src="images/attiny.png" alt="Мікроконтролер">
-	</div>
+        <img src="images/Graber_i3.jpg" alt="3д принтер">
+        <img src="images/attiny.png" alt="Мікроконтролер">
+    </div>
+    <script src="mobile-menu.js"></script> <!-- Додайте посилання на ваш JavaScript файл -->
 </body>
 </html>
